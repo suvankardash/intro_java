@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>java part 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f3f3;
+      margin: 10;
+      padding: 10;
+    }
+    header {
+      background-color: #A4BE7B;
+      color: #FFF;
+      padding: 15px;
+      text-align: center;
+    }
+    footer {
+      background: linear-gradient(to right, #2F2FA2, #FFABAB);
+      color: #0c0c14;
+      padding: 0.5px;
+      text-align: center;
+      /*position: absolute;*/
+      /*bottom: 0;*/
+      width: 100%;
+    }
+    h1 {
+      color: #abadb0;
+      font-family: Georgia, sans-serif;
+      background: linear-gradient(to right, #2F2FA2, #FFABAB);
+      /*display: inline-block;*/
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    /*main {*/
+    /*  margin: 20px;*/
+    /*  padding: 20px;*/
+    /*  background-color: white;*/
+    /*  box-shadow: 0px 0px 10px #999;*/
+    /*  overflow: auto;*/
+    /*}*/
+    /*li {*/
+    /*  margin-bottom: 10px;*/
+    /*}*/
+    /*li span {*/
+    /*  font-weight: bold;*/
+    /*}*/
+    h2 {
+      color: #edf6f9;
+      background: linear-gradient(to right, #2F2FA2, #FFABAB);
+      /*display: inline-block;*/
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    p {
+      text-align: -moz-center;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    ul {
+      margin-left: 30px;
+      margin-bottom: 20px;
+      list-style-type: disc;
+      color: #7b2cbf;
+    }
+    li {
+      line-height: 1.5;
+    }
+    code {
+      font-family: "Hack", monospace;
+    }
+    .container {
+      border: 1px solid #E4E4E4;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    .container {
+      border: 1px solid #E4E4E4;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 5px 5px 5px rgba(88, 31, 132, 0.5); /* adds a box shadow */
+      background-color: #FFFFFF; /* sets background color to white */
+    }
+
+    header {
+      background-color: #A4BE7B;
+      color: #FFF;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgba(88, 31, 132, 0.5); /* adds a box shadow */
+    }
+
+    h1 {
+      color: #DEE2E6;
+      font-family: Georgia, sans-serif;
+      background: linear-gradient(to right, #05055e, #6c125a);
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px rgba(88, 31, 132, 0.5); /* adds a box shadow */
+    }
+
+    h2 {
+      color: #edf6f9;
+      background: linear-gradient(to right, #05055e, #6c125a);
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px rgba(88, 31, 132, 0.5); /* adds a box shadow */
+    }
+
+    ul {
+      margin-left: 30px;
+      margin-bottom: 20px;
+      list-style-type: disc;
+      color: black;
+      background-color: #FFFFFF; /* sets background color to white */
+      box-shadow: 5px 5px 5px rgba(88, 31, 132, 0.5); /* adds a box shadow */
+    }
+
+    li {
+      line-height: 1.5;
+    }
+
+    /* adds a blue color for the footer */
+    footer {
+      background: linear-gradient(to right, #05055e, #6c125a);
+      color: #e9e9f1;
+      padding: 0.5px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgba(88, 31, 132, 0.5); /* adds a box shadow */
+    }
+
+    /* adds a pink color for the highlighted text */
+    strong {
+      color: #05055e;
+    }
+
+    /* Box styling */
+    .box {
+      background-color: #cce5f5;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px rgba(88, 31, 132, 0.5);
+      padding: 20px;
+    }
+
+    /* Text styling */
+    h1 {
+      font-size: 36px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      color: black;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #6c125a;
+      text-decoration: none;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+    }
+
+    a:hover {
+      color: #333;
+    }
+
+    /* Background color */
+    body {
+      background-color: #f6f8f9;
+    }
+
+    /* Button styling */
+    .button {
+      background-color: #ff6f69;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #333;
+    }
+
+  </style>
+</head>
+<body>
+<h1><center> DISCOVERING JAVA </h1>
+<h2><u>INTRODUCTION TO JAVA</u></h2>
+<p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language. Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. It was named as Oak before naming it as Java as it faced some copyright issues.</p>
+<p>Java is a widely-used programming language for coding websites and Android and iOS applications. Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.</p>
+<p>Now the question arises: <strong>What is platform?</strong><br>
+  Answer is that any hardware or software environment in which a program runs, is known as a platform. Java is having it's own runtime environment(JRE) and API. Hence it is called as platform.</p>
+<p>After all this, we will now look at the applications of the Java in various fields. <strong>Some of them are - </strong></p>
+<ul>
+  <li>Mobile Application Development</li>
+  <li>Website Designing</li>
+  <li>Database Connectivity</li>
+  <li>Game Development</li>
+</ul>
+<p> <strong> But why do we use JAVA? Why only JAVA and not some other language ?</strong></p>
+Let's highlight some of <strong>its characteristics - </strong>
+<h3><u>Charateristics of JAVA</u></h3>
+
+<ul>
+  <li>It can work on many different platforms like Windows, MacOS, Raspberry, Linux.</li>
+  <li>It is free, easy to learn, simple and open source software.</li>
+  <li>It is secure, fast, and highly powerful.</li>
+  <li>It supports <strong><a href="https://www.javatpoint.com/java-oops-concepts" target="_blank">object-oriented programming</a> </strong> giving a clear structure to the program.</li>
+</ul>
+<h3><u>Applications of JAVA</u></h3>
+There are different types of Java applications available.
+Some of them are as mentioned below.
+<ul>
+  <li><strong>Standalone Applications -</strong> These are also known as desktop or window-based applications. These are traditional software that we need to install on every machine. Examples are Media player, antivirus, etc. We use AWT and Swing in Java for creating Standalone Applications. </li>
+  <br>
+  <li><strong>Web Applications -</strong> An application that runs on the server side and creates a dynamic page is called a web application. Currently technologies like <a href = "https://www.javatpoint.com/servlet-tutorial" target="_blank"> Servlet</a>, <a href="https://www.javatpoint.com/spring-tutorial" target="_blank"> Spring</a>, <a href="https://www.javatpoint.com/jsp-tutorial" target="_blank"> JSP</a>, etc. are used for creating web applications in Java. </li>
+  <br>
+  <li><strong>Enterprise Applications -</strong> An application that is distributed in nature, such as banking applications, etc. is called an enterprise application. It has advantages like high-level security, load balancing, and clustering. <a href="https://www.javatpoint.com/ejb-tutorial" target="_blank">EJB </a>is used for creating enterprise applications in Java.</li>
+  <br>
+  <li><strong>Mobile Application -</strong> An application which is created for mobile devices is called a mobile application. Currently, Android and Java ME are used for creating mobile applications.</li>
+</ul>
+<h3><u>Different editions in JAVA</u></h3>
+The Java which we use has <strong>four different types of edition</strong>. They are -
+<ul>
+  <li><strong><u>Java SE (Java Standard Edition) - </u></strong>It is a Java programming platform. It includes Java programming APIs such as java.lang, java.io, java.net, java.util, java.sql, java.math etc. It includes core topics like OOPs, String, Regex, Exception, Inner classes, Multithreading, I/O Stream, Networking, AWT, Swing, Reflection, Collection, etc.</li>
+  <br>
+  <li><strong><u>Java EE (Java Enterprise Edition) - </u></strong>It is an enterprise platform that is mainly used to develop web and enterprise applications. It is built on top of the Java SE platform. It includes topics like Servlet, JSP, Web Services, EJB, JPA, etc.</li>
+  <br>
+  <li><strong><u>Java ME (Java Micro Edition) - </u></strong>It is a micro platform that is dedicated to mobile applications.</li>
+  <br>
+  <li><strong><u>JavaFX - </u></strong>It is used to develop rich internet applications. It uses a lightweight user interface API.</li>
+</ul>
+Now we will check out some basic features of Java which are related to <strong>Object-Oriented Program (OOP) </strong>
+<br>
+<h3><u>Definition of OOP Concepts in JAVA</u></h3>
+<p>The main parts of Java’s Object-Oriented Programming(OOP) concepts include abstraction, encapsulation, inheritance and polymorphism. Java OOP concepts let us create working methods and variables, then re-use all or part of them without compromising security. Grasping the OOP concepts is key to understanding how Java works.</p>
+<p>Java implements OOP concepts as follows:- </p>
+<ul>
+  <li><strong>Abstraction - </strong> It is defined as using simple things to represent complexity. We all know how to turn the TV on, but we don’t need to know how it works in order to enjoy it. In Java, abstraction means simple things like objects, classes and variables represent more complex underlying code and data. This is important because it lets you avoid repeating the same work multiple times.</li>
+  <br>
+  <li><strong>Encapsulation - </strong> The practice of keeping fields within a class private, then providing access to those fields via public methods. Encapsulation is a protective barrier that keeps the data and code safe within the class itself. We can then reuse objects like code components or variables without allowing open access to the data system-wide.</li>
+  <br>
+  <li><strong>Inheritance - </strong> It is a special feature of Object-Oriented Programming in Java as it lets programmers create new classes that share some of the attributes of existing classes. Using Inheritance lets us build on previous work without reinventing the wheel.</li>
+  <br>
+  <li><strong>Polymorphism - </strong>It allows programmers to use the same word in Java to mean different things in different contexts. One form of polymorphism is method overloading. That’s when the code itself implies different meanings. The other form is method overriding. That’s when the values of the supplied variables imply different meanings.</li>
+</ul>
+
+<h2>Introduction to JDK, JVM, JRE.</h2>
+<p>
+  Java is a popular programming language used for building applications that run on multiple platforms. It is known for its "write once, run anywhere" philosophy, meaning that code written in Java can be run on any device or operating system that has a Java Virtual Machine (JVM) installed.
+</p>
+<h2>JDK (Java Development Kit)</h2>
+<p>
+  The JDK is a software development kit used for developing Java applications. It includes the Java compiler, which is used to compile Java source code into bytecode that can be executed by the JVM. The JDK also includes other tools such as the Java debugger and JavaDoc, which is used for generating API documentation.
+</p>
+<p>
+  <em>JDK is an implementation of any one of the below given Java Platforms released by Oracle Corporation:</em><br>
+<ul style ="padding-left: 30px; list-style: circle;">
+  <li>Standard Edition Java Platform</li>
+  <li>Enterprise Edition Java Platform</li>
+  <li>Micro Edition Java Platform</li>
+</ul>
+<br>The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. to complete the development of a Java Application.
+</p>
+<img src="7.png"height="160%" width="20%" alt="Coding"/>
+<h2>JRE (Java Runtime Environment)</h2>
+<p>
+  The JRE is a software package that provides the runtime environment for
+  Java applications. It includes the JVM, which is responsible for
+  executing Java bytecode, as well as the Java class library, which
+  contains pre-built classes and methods that can be used by Java
+  applications.
+</p>
+<p>
+  JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used for developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of libraries + other files that JVM uses at runtime.
+  The implementation of JVM is also actively released by other companies besides Sun Micro Systems.
+</p>
+<img src="6.png"height="160%" width="20%" alt="Coding" />
+<h2>JVM (Java Virtual Machine)</h2>
+<p>
+  The JVM is a virtual machine that runs Java bytecode. It acts as an
+  interpreter between the Java application and the underlying hardware and
+  operating system. The JVM is responsible for converting bytecode into
+  machine code that can be executed by the computer's processor.
+</p>
+
+<h2>What it does</h2>
+<p>
+<ul style ="padding-left: 30px; list-style: circle;">
+  <h3>The JVM performs following operation:</h3>
+  <img src="5.png"height="250" width="40%" alt="Coding" align="right">
+  </p>
+  <li>Loads code</li>
+  <li> Verifies code</li>
+  <li> Executes code Provides runtime environment</li>
+  </li>
+  <h3>JVM provides definitions for the:</h3>
+  <li>Memory area</li>
+  <li>Class file format</li>
+  <li> Register set</li>
+  <li>Garbage-collected heap</li>
+  <li>Loads code</li>
+  <li>Fatal error reporting etc.</li>
+</ul>
+</p>
+<img src="2.png"height="550" width="100%" alt="Coding" align="center" />
+<p>
+  Understanding the difference between the JDK, JRE, and JVM is important for developing and running Java applications. The JDK is used for developing applications, while the JRE provides the runtime environment for those applications. Both the JDK and JRE rely on the JVM to execute Java bytecode.
+</p>
+<img src="1.png"height="300" width="40%" alt="Coding" align="lest"/>
+<h2> A Simple Program Execution in JAVA.</h2>
+<p>After we have seen all the theory, now let's start with the programming part with a small and a basic program in JAVA. </p>
+<p>
+  <img src="C:\Users\KIIT\WebstormProjects\4.jpg"height="400" width="40%" alt="Java_Program" align="lest" />
+</p>
+<p>
+  So in the above code, we use an access specifier called <strong>"public"</strong>. This defines the access that a user have to a specific class or function. After that, we have used the keyword 'class' along with the name of the class which specifies that a class has been declared. Then we have declared a function inside the class as static void main which specifies that the function is <a href="https://www.javatpoint.com/static-function-in-java" target="_blank">static</a> in nature.
+  In the program, 'void' is the return the type of the function meaning that the function will return no value after it's execution is completed. 'String[] args' means an array of sequence of characters (Strings) that are passed to the 'main()' function. Now we have a display line as 'System.out.println()' which means as we are calling <strong>System class and println() function from java.lang package.</strong>and printing a general display message of "Hello Everyone." and after that the purpose for what we are writing the java code i.e. "Finding the sum."
+</p>
+<p>
+  In the subsequent line, we have declared a variable named as 'a' and 'b' with assigned value of 10 and 20 respectively of type int i.e. integer value.Since we are adding the integer values up here, so we will store also the value in a variable of type integer i.e. int; here we have named it 'sum' which stores the addition value of a and b i.e. 10 and 20 which is equal to 30. After that we display the value of sum using System.out.println() statement.
+  Then we close scope of all the methods and class used in our program by curly brackets / braces to denote the end of execution of the program.
+</p>
+<p>
+  The output of the above program is given as below.
+</p>
+<img src="C:\Users\KIIT\WebstormProjects\3.png"height="200" width="30%" alt="Output_Screen" align="lest">
+<footer>
+  <p><center> Copyright © April 2023. CSE-1,Group 4. </center></p>
+</footer>
+</body>
+</html>
